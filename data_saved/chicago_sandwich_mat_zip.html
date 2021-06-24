@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e82fc01e65b2436ea0e10cab43a7e5a0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e82fc01e65b2436ea0e10cab43a7e5a0" ></div>
+        
+</body>
+<script>    
+    
+            var map_e82fc01e65b2436ea0e10cab43a7e5a0 = L.map(
+                "map_e82fc01e65b2436ea0e10cab43a7e5a0",
+                {
+                    center: [41.9228746909091, -87.68064953863633],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5355cc19d1a14d9a81e343d26c85cec6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+            var marker_30b380e54bf64a8ea00371ed966cd9b0 = L.marker(
+                [41.9228746909091, -87.68064953863633],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_c107d8615e764e3bb27cc90fa442e9c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e39b0b859a754405bee115a052a81cc2 = $(`<div id="html_e39b0b859a754405bee115a052a81cc2" style="width: 100.0%; height: 100.0%;">center</div>`)[0];
+            popup_c107d8615e764e3bb27cc90fa442e9c0.setContent(html_e39b0b859a754405bee115a052a81cc2);
+        
+
+        marker_30b380e54bf64a8ea00371ed966cd9b0.bindPopup(popup_c107d8615e764e3bb27cc90fa442e9c0)
+        ;
+
+        
+    
+    
+            var marker_1a12f573af4844cba0dd22fc121835fd = L.marker(
+                [41.8956049, -87.67996149999999],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_f69ac20807ac4b19b26bb0c0689d16bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_77f8c1c9b9f44926bc36b851f69415e8 = $(`<div id="html_77f8c1c9b9f44926bc36b851f69415e8" style="width: 100.0%; height: 100.0%;">Old Oak Tap</div>`)[0];
+            popup_f69ac20807ac4b19b26bb0c0689d16bd.setContent(html_77f8c1c9b9f44926bc36b851f69415e8);
+        
+
+        marker_1a12f573af4844cba0dd22fc121835fd.bindPopup(popup_f69ac20807ac4b19b26bb0c0689d16bd)
+        ;
+
+        
+    
+    
+            var marker_5b875b60f69e4f75a6da153918efda04 = L.marker(
+                [41.8846582, -87.6476668],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_88865ac848ec4d52a355862b6c246599 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3bdb880ff68647e0ab90fd989602c311 = $(`<div id="html_3bdb880ff68647e0ab90fd989602c311" style="width: 100.0%; height: 100.0%;">Au Cheval</div>`)[0];
+            popup_88865ac848ec4d52a355862b6c246599.setContent(html_3bdb880ff68647e0ab90fd989602c311);
+        
+
+        marker_5b875b60f69e4f75a6da153918efda04.bindPopup(popup_88865ac848ec4d52a355862b6c246599)
+        ;
+
+        
+    
+    
+            var marker_d8d59a1d58c94e0291f99373653310f7 = L.marker(
+                [41.8905226, -87.6307834],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_b4fa4e35d18f4971b8bd027adb747328 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3a789348a394980992a1dccea3a9a0f = $(`<div id="html_b3a789348a394980992a1dccea3a9a0f" style="width: 100.0%; height: 100.0%;">Xoco</div>`)[0];
+            popup_b4fa4e35d18f4971b8bd027adb747328.setContent(html_b3a789348a394980992a1dccea3a9a0f);
+        
+
+        marker_d8d59a1d58c94e0291f99373653310f7.bindPopup(popup_b4fa4e35d18f4971b8bd027adb747328)
+        ;
+
+        
+    
+    
+            var marker_7f1c60409831476bbadc5f8db3b696b8 = L.marker(
+                [42.0583217, -87.6837479],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_4e431bc707524ad1b3a60525d316f9d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_901f01088a1d403f8dae57b710ebb57d = $(`<div id="html_901f01088a1d403f8dae57b710ebb57d" style="width: 100.0%; height: 100.0%;">Al’s Deli</div>`)[0];
+            popup_4e431bc707524ad1b3a60525d316f9d6.setContent(html_901f01088a1d403f8dae57b710ebb57d);
+        
+
+        marker_7f1c60409831476bbadc5f8db3b696b8.bindPopup(popup_4e431bc707524ad1b3a60525d316f9d6)
+        ;
+
+        
+    
+    
+            var marker_5c6ac0e8ea4d4258a1ab3e8b8ef5afee = L.marker(
+                [41.8866036, -87.64853649999999],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_2a860bf864ea41448178baed1b50a92d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c857fc67d6b14afbbe0d79c111ee1b9e = $(`<div id="html_c857fc67d6b14afbbe0d79c111ee1b9e" style="width: 100.0%; height: 100.0%;">Publican Quality Meats</div>`)[0];
+            popup_2a860bf864ea41448178baed1b50a92d.setContent(html_c857fc67d6b14afbbe0d79c111ee1b9e);
+        
+
+        marker_5c6ac0e8ea4d4258a1ab3e8b8ef5afee.bindPopup(popup_2a860bf864ea41448178baed1b50a92d)
+        ;
+
+        
+    
+    
+            var marker_6947046209234b7da91c2507d9c90330 = L.marker(
+                [41.9000869, -87.6253366],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_efba73ac60f84fa18d0f19daa6abeb0e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_168544cadb974543914057ab0355b213 = $(`<div id="html_168544cadb974543914057ab0355b213" style="width: 100.0%; height: 100.0%;">Hendrickx Belgian Bread Crafter</div>`)[0];
+            popup_efba73ac60f84fa18d0f19daa6abeb0e.setContent(html_168544cadb974543914057ab0355b213);
+        
+
+        marker_6947046209234b7da91c2507d9c90330.bindPopup(popup_efba73ac60f84fa18d0f19daa6abeb0e)
+        ;
+
+        
+    
+    
+            var marker_497fea134d1948188aa929bd2da10b4e = L.marker(
+                [41.8590541, -87.6252007],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_7ed1a510d14e497b8038c3b28aafd672 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0cf698c99a60476282928efe07646c43 = $(`<div id="html_0cf698c99a60476282928efe07646c43" style="width: 100.0%; height: 100.0%;">Acadia</div>`)[0];
+            popup_7ed1a510d14e497b8038c3b28aafd672.setContent(html_0cf698c99a60476282928efe07646c43);
+        
+
+        marker_497fea134d1948188aa929bd2da10b4e.bindPopup(popup_7ed1a510d14e497b8038c3b28aafd672)
+        ;
+
+        
+    
+    
+            var marker_f57aae7af07f4033909b7f6fdd3b1895 = L.marker(
+                [41.9102031, -87.68287529999999],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_94c32d8a58f343c6bc6a3e90a4e1781b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_83e78873dc9340558e07cbbcc0f369c5 = $(`<div id="html_83e78873dc9340558e07cbbcc0f369c5" style="width: 100.0%; height: 100.0%;">Birchwood Kitchen</div>`)[0];
+            popup_94c32d8a58f343c6bc6a3e90a4e1781b.setContent(html_83e78873dc9340558e07cbbcc0f369c5);
+        
+
+        marker_f57aae7af07f4033909b7f6fdd3b1895.bindPopup(popup_94c32d8a58f343c6bc6a3e90a4e1781b)
+        ;
+
+        
+    
+    
+            var marker_c56c6dfbbfad4417853680eef6db1455 = L.marker(
+                [41.9097558, -87.7176727],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_59144f53422f41c5bfa8089e522365e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fda74e51fa7f4667b882ab73ea298396 = $(`<div id="html_fda74e51fa7f4667b882ab73ea298396" style="width: 100.0%; height: 100.0%;">Cemitas Puebla</div>`)[0];
+            popup_59144f53422f41c5bfa8089e522365e8.setContent(html_fda74e51fa7f4667b882ab73ea298396);
+        
+
+        marker_c56c6dfbbfad4417853680eef6db1455.bindPopup(popup_59144f53422f41c5bfa8089e522365e8)
+        ;
+
+        
+    
+    
+            var marker_0f0714625afe4c5885b551be2d4e52a2 = L.marker(
+                [41.8345302, -87.6456492],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_ed6befad6d0946cfafbfdc148a76f035 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_90346d14c1f6426a8a19b12b67fcbf27 = $(`<div id="html_90346d14c1f6426a8a19b12b67fcbf27" style="width: 100.0%; height: 100.0%;">Nana</div>`)[0];
+            popup_ed6befad6d0946cfafbfdc148a76f035.setContent(html_90346d14c1f6426a8a19b12b67fcbf27);
+        
+
+        marker_0f0714625afe4c5885b551be2d4e52a2.bindPopup(popup_ed6befad6d0946cfafbfdc148a76f035)
+        ;
+
+        
+    
+    
+            var marker_92e0a32fa4f649d4bf64a76cbe96cf9a = L.marker(
+                [41.9276207, -87.706792],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_e99d4d82be6d47a0852e3e8096401d76 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4bd3188fae2b4707bc519652807b4f01 = $(`<div id="html_4bd3188fae2b4707bc519652807b4f01" style="width: 100.0%; height: 100.0%;">Lula Cafe</div>`)[0];
+            popup_e99d4d82be6d47a0852e3e8096401d76.setContent(html_4bd3188fae2b4707bc519652807b4f01);
+        
+
+        marker_92e0a32fa4f649d4bf64a76cbe96cf9a.bindPopup(popup_e99d4d82be6d47a0852e3e8096401d76)
+        ;
+
+        
+    
+    
+            var marker_79308058353c4f879b73b10443bd4a3d = L.marker(
+                [41.8781136, -87.6297982],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_770e6f429d9340f1b3ce723740e90f52 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_668ae9eca2ef41299982bf28aafbf66e = $(`<div id="html_668ae9eca2ef41299982bf28aafbf66e" style="width: 100.0%; height: 100.0%;">Frog n Snail</div>`)[0];
+            popup_770e6f429d9340f1b3ce723740e90f52.setContent(html_668ae9eca2ef41299982bf28aafbf66e);
+        
+
+        marker_79308058353c4f879b73b10443bd4a3d.bindPopup(popup_770e6f429d9340f1b3ce723740e90f52)
+        ;
+
+        
+    
+    
+            var marker_9a04041963f4440e81ccaa7357e0f27a = L.marker(
+                [41.9451044, -87.6636812],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_aee45d659d8e481a8f2322f33617c885 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5feea5f06f4b4ddb8cb25582b5b56693 = $(`<div id="html_5feea5f06f4b4ddb8cb25582b5b56693" style="width: 100.0%; height: 100.0%;">Crosby’s Kitchen</div>`)[0];
+            popup_aee45d659d8e481a8f2322f33617c885.setContent(html_5feea5f06f4b4ddb8cb25582b5b56693);
+        
+
+        marker_9a04041963f4440e81ccaa7357e0f27a.bindPopup(popup_aee45d659d8e481a8f2322f33617c885)
+        ;
+
+        
+    
+    
+            var marker_c7adfa485de049e2b3ede9160c43cd27 = L.marker(
+                [41.930109, -87.7072408],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_4159d0b32b2440e0b67f3ac78f460e8d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c39219e9cca94672b9d5c10bdd0bdd6c = $(`<div id="html_c39219e9cca94672b9d5c10bdd0bdd6c" style="width: 100.0%; height: 100.0%;">Longman & Eagle</div>`)[0];
+            popup_4159d0b32b2440e0b67f3ac78f460e8d.setContent(html_c39219e9cca94672b9d5c10bdd0bdd6c);
+        
+
+        marker_c7adfa485de049e2b3ede9160c43cd27.bindPopup(popup_4159d0b32b2440e0b67f3ac78f460e8d)
+        ;
+
+        
+    
+    
+            var marker_4d6c103fa12c48b3b459f6dc501f3829 = L.marker(
+                [41.8912971, -87.6555453],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_fd689d5676fc440ba91066416598f7cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_015fa707f7a047dd88d72e8281bd4792 = $(`<div id="html_015fa707f7a047dd88d72e8281bd4792" style="width: 100.0%; height: 100.0%;">Bari</div>`)[0];
+            popup_fd689d5676fc440ba91066416598f7cd.setContent(html_015fa707f7a047dd88d72e8281bd4792);
+        
+
+        marker_4d6c103fa12c48b3b459f6dc501f3829.bindPopup(popup_fd689d5676fc440ba91066416598f7cd)
+        ;
+
+        
+    
+    
+            var marker_035a0e4140764c62b4f4a697970f5fe1 = L.marker(
+                [41.8678529, -87.6419289],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_21be874ee0b7451b9c215a670583f02d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5db49669b3a4afda26fc2e82f52f238 = $(`<div id="html_a5db49669b3a4afda26fc2e82f52f238" style="width: 100.0%; height: 100.0%;">Manny’s</div>`)[0];
+            popup_21be874ee0b7451b9c215a670583f02d.setContent(html_a5db49669b3a4afda26fc2e82f52f238);
+        
+
+        marker_035a0e4140764c62b4f4a697970f5fe1.bindPopup(popup_21be874ee0b7451b9c215a670583f02d)
+        ;
+
+        
+    
+    
+            var marker_50f05bd58e1e46e1a3da1b5647ed8b17 = L.marker(
+                [41.8852691, -87.6184837],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_8a6b9c7a8e3f4e09bf47226601337e28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7031363fe824626bb6de831c99d2806 = $(`<div id="html_c7031363fe824626bb6de831c99d2806" style="width: 100.0%; height: 100.0%;">Eggy’s</div>`)[0];
+            popup_8a6b9c7a8e3f4e09bf47226601337e28.setContent(html_c7031363fe824626bb6de831c99d2806);
+        
+
+        marker_50f05bd58e1e46e1a3da1b5647ed8b17.bindPopup(popup_8a6b9c7a8e3f4e09bf47226601337e28)
+        ;
+
+        
+    
+    
+            var marker_50cf058a97e8436b907b79f411420313 = L.marker(
+                [41.9080539, -87.6343113],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_3e1a6eb11074406887bab726abfaf924 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86bbbe9590134767b9fcf870fe1f8d45 = $(`<div id="html_86bbbe9590134767b9fcf870fe1f8d45" style="width: 100.0%; height: 100.0%;">Old Jerusalem</div>`)[0];
+            popup_3e1a6eb11074406887bab726abfaf924.setContent(html_86bbbe9590134767b9fcf870fe1f8d45);
+        
+
+        marker_50cf058a97e8436b907b79f411420313.bindPopup(popup_3e1a6eb11074406887bab726abfaf924)
+        ;
+
+        
+    
+    
+            var marker_3458ffc563f547d78308f2892dea78f7 = L.marker(
+                [41.91369539999999, -87.6771273],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_ac5dd35e6c684a278e07d2e2bd225580 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e55f8857fc6408c9322949dd3f2ddd7 = $(`<div id="html_9e55f8857fc6408c9322949dd3f2ddd7" style="width: 100.0%; height: 100.0%;">Mindy’s HotChocolate</div>`)[0];
+            popup_ac5dd35e6c684a278e07d2e2bd225580.setContent(html_9e55f8857fc6408c9322949dd3f2ddd7);
+        
+
+        marker_3458ffc563f547d78308f2892dea78f7.bindPopup(popup_ac5dd35e6c684a278e07d2e2bd225580)
+        ;
+
+        
+    
+    
+            var marker_ec8ab1dfa6bb415bbc6df08e8e0f9f5a = L.marker(
+                [41.9536887, -87.7084498],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_dff8b1258e5f4bc88ed99d1bab03ef07 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c13589853bd34acbbf017464ff470167 = $(`<div id="html_c13589853bd34acbbf017464ff470167" style="width: 100.0%; height: 100.0%;">Olga’s Delicatessen</div>`)[0];
+            popup_dff8b1258e5f4bc88ed99d1bab03ef07.setContent(html_c13589853bd34acbbf017464ff470167);
+        
+
+        marker_ec8ab1dfa6bb415bbc6df08e8e0f9f5a.bindPopup(popup_dff8b1258e5f4bc88ed99d1bab03ef07)
+        ;
+
+        
+    
+    
+            var marker_1dcfe45274124063b213754be0929006 = L.marker(
+                [41.9794496, -87.66795719999999],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_bb42dafc33e64fb48d9b7b3b08851a88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eaef2da9fc344779bdc13387090566a0 = $(`<div id="html_eaef2da9fc344779bdc13387090566a0" style="width: 100.0%; height: 100.0%;">Big Jones</div>`)[0];
+            popup_bb42dafc33e64fb48d9b7b3b08851a88.setContent(html_eaef2da9fc344779bdc13387090566a0);
+        
+
+        marker_1dcfe45274124063b213754be0929006.bindPopup(popup_bb42dafc33e64fb48d9b7b3b08851a88)
+        ;
+
+        
+    
+    
+            var marker_3121194ce9ce4f299497ee1fdf7290a7 = L.marker(
+                [41.9541592, -87.70271079999999],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_da35ee16d1d14b26b28f785478f5a8fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_959f9f93e88344c4a7a886ded7c45ac1 = $(`<div id="html_959f9f93e88344c4a7a886ded7c45ac1" style="width: 100.0%; height: 100.0%;">La Pane</div>`)[0];
+            popup_da35ee16d1d14b26b28f785478f5a8fd.setContent(html_959f9f93e88344c4a7a886ded7c45ac1);
+        
+
+        marker_3121194ce9ce4f299497ee1fdf7290a7.bindPopup(popup_da35ee16d1d14b26b28f785478f5a8fd)
+        ;
+
+        
+    
+    
+            var marker_16c27c5b1ede4125a5abb805f081bcae = L.marker(
+                [42.156691, -87.803618],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_cf78891bcafb4c47af451e48042e9fa8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ccd85fe94dce4ef49e6f8d739432c1eb = $(`<div id="html_ccd85fe94dce4ef49e6f8d739432c1eb" style="width: 100.0%; height: 100.0%;">Max’s Deli</div>`)[0];
+            popup_cf78891bcafb4c47af451e48042e9fa8.setContent(html_ccd85fe94dce4ef49e6f8d739432c1eb);
+        
+
+        marker_16c27c5b1ede4125a5abb805f081bcae.bindPopup(popup_cf78891bcafb4c47af451e48042e9fa8)
+        ;
+
+        
+    
+    
+            var marker_39dec1c4154f4b28a9f074a3d53dd94f = L.marker(
+                [41.9652627, -87.67552219999999],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_3999d96d4a934a8c97b107bdb0dbdc26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e48e860ebb0c42a49ef161d31de6807d = $(`<div id="html_e48e860ebb0c42a49ef161d31de6807d" style="width: 100.0%; height: 100.0%;">City Provisions</div>`)[0];
+            popup_3999d96d4a934a8c97b107bdb0dbdc26.setContent(html_e48e860ebb0c42a49ef161d31de6807d);
+        
+
+        marker_39dec1c4154f4b28a9f074a3d53dd94f.bindPopup(popup_3999d96d4a934a8c97b107bdb0dbdc26)
+        ;
+
+        
+    
+    
+            var marker_12299a30afaa47b5a0c4356ec0780327 = L.marker(
+                [41.9027178, -87.6902192],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_60437629334f4e7682e488c85c73c075 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a9eb3068fd547608799783c41a59405 = $(`<div id="html_4a9eb3068fd547608799783c41a59405" style="width: 100.0%; height: 100.0%;">Papa’s Cache Sabroso</div>`)[0];
+            popup_60437629334f4e7682e488c85c73c075.setContent(html_4a9eb3068fd547608799783c41a59405);
+        
+
+        marker_12299a30afaa47b5a0c4356ec0780327.bindPopup(popup_60437629334f4e7682e488c85c73c075)
+        ;
+
+        
+    
+    
+            var marker_9321e6b99e644ced9fc304c55fdb777a = L.marker(
+                [41.8893683, -87.6349487],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_4ea4b1db68e44a498b3d5d819c30442d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d0089ce1e9e4795a57953483e4080d4 = $(`<div id="html_5d0089ce1e9e4795a57953483e4080d4" style="width: 100.0%; height: 100.0%;">Bavette’s Bar & Boeuf</div>`)[0];
+            popup_4ea4b1db68e44a498b3d5d819c30442d.setContent(html_5d0089ce1e9e4795a57953483e4080d4);
+        
+
+        marker_9321e6b99e644ced9fc304c55fdb777a.bindPopup(popup_4ea4b1db68e44a498b3d5d819c30442d)
+        ;
+
+        
+    
+    
+            var marker_e5c7c4301f2444aca8d8133817e19117 = L.marker(
+                [41.9105258, -87.6343775],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_acfc7e58ccfa49dcaba04bf5d14f1d99 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5253417d8984df99ae9ce3fe9cae5bf = $(`<div id="html_a5253417d8984df99ae9ce3fe9cae5bf" style="width: 100.0%; height: 100.0%;">La Fournette</div>`)[0];
+            popup_acfc7e58ccfa49dcaba04bf5d14f1d99.setContent(html_a5253417d8984df99ae9ce3fe9cae5bf);
+        
+
+        marker_e5c7c4301f2444aca8d8133817e19117.bindPopup(popup_acfc7e58ccfa49dcaba04bf5d14f1d99)
+        ;
+
+        
+    
+    
+            var marker_bd9a49d018a34299840d3240cafc0084 = L.marker(
+                [41.8896188, -87.64484259999999],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_c2c34e8361fb4c9ea2de60f525b834a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a90595d3005f4e11a0272fc2d847b840 = $(`<div id="html_a90595d3005f4e11a0272fc2d847b840" style="width: 100.0%; height: 100.0%;">Paramount Room</div>`)[0];
+            popup_c2c34e8361fb4c9ea2de60f525b834a3.setContent(html_a90595d3005f4e11a0272fc2d847b840);
+        
+
+        marker_bd9a49d018a34299840d3240cafc0084.bindPopup(popup_c2c34e8361fb4c9ea2de60f525b834a3)
+        ;
+
+        
+    
+    
+            var marker_7f3a8b7344d9493da56f304d1a00229f = L.marker(
+                [41.91504990000001, -87.6778047],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_4e4c7a1d121b4b8c879dba4a55e0d1e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb39b3110dfd4c89b02ca5f6bdb3a03a = $(`<div id="html_cb39b3110dfd4c89b02ca5f6bdb3a03a" style="width: 100.0%; height: 100.0%;">Melt Sandwich Shoppe</div>`)[0];
+            popup_4e4c7a1d121b4b8c879dba4a55e0d1e4.setContent(html_cb39b3110dfd4c89b02ca5f6bdb3a03a);
+        
+
+        marker_7f3a8b7344d9493da56f304d1a00229f.bindPopup(popup_4e4c7a1d121b4b8c879dba4a55e0d1e4)
+        ;
+
+        
+    
+    
+            var marker_aaf1be67b2ab40deb6b7be77a079dd4a = L.marker(
+                [41.9218521, -87.6592124],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_d4573abfe9c247ae87f647e22017578d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9dded69b3b684c908382a36194d1a19d = $(`<div id="html_9dded69b3b684c908382a36194d1a19d" style="width: 100.0%; height: 100.0%;">Floriole Cafe & Bakery</div>`)[0];
+            popup_d4573abfe9c247ae87f647e22017578d.setContent(html_9dded69b3b684c908382a36194d1a19d);
+        
+
+        marker_aaf1be67b2ab40deb6b7be77a079dd4a.bindPopup(popup_d4573abfe9c247ae87f647e22017578d)
+        ;
+
+        
+    
+    
+            var marker_24fc7ef54d5d4977ac0cbec470fc7a54 = L.marker(
+                [41.9797099, -87.66934409999999],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_ba24a733a4b542308526e2cc12086dd2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5bac5c9f03344f5090ba7f56c50af517 = $(`<div id="html_5bac5c9f03344f5090ba7f56c50af517" style="width: 100.0%; height: 100.0%;">First Slice Pie Café</div>`)[0];
+            popup_ba24a733a4b542308526e2cc12086dd2.setContent(html_5bac5c9f03344f5090ba7f56c50af517);
+        
+
+        marker_24fc7ef54d5d4977ac0cbec470fc7a54.bindPopup(popup_ba24a733a4b542308526e2cc12086dd2)
+        ;
+
+        
+    
+    
+            var marker_0121540f4cb244709ad0961238d949da = L.marker(
+                [41.9617122, -87.67581620000001],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_44a41d9ab84b424896e0f1f5b8db746e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84a928bc1e764cfaaa5b5d9bea0d6174 = $(`<div id="html_84a928bc1e764cfaaa5b5d9bea0d6174" style="width: 100.0%; height: 100.0%;">Troquet</div>`)[0];
+            popup_44a41d9ab84b424896e0f1f5b8db746e.setContent(html_84a928bc1e764cfaaa5b5d9bea0d6174);
+        
+
+        marker_0121540f4cb244709ad0961238d949da.bindPopup(popup_44a41d9ab84b424896e0f1f5b8db746e)
+        ;
+
+        
+    
+    
+            var marker_9fbbe90f6a2e4b60837c585ba434aabf = L.marker(
+                [41.89296119999999, -87.6278214],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_630cbf8c412645c897ac2263410ea961 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45107985895649da8f9c5676cccf60b6 = $(`<div id="html_45107985895649da8f9c5676cccf60b6" style="width: 100.0%; height: 100.0%;">Grahamwich</div>`)[0];
+            popup_630cbf8c412645c897ac2263410ea961.setContent(html_45107985895649da8f9c5676cccf60b6);
+        
+
+        marker_9fbbe90f6a2e4b60837c585ba434aabf.bindPopup(popup_630cbf8c412645c897ac2263410ea961)
+        ;
+
+        
+    
+    
+            var marker_138feb7f20c34ebba448b32030e9e868 = L.marker(
+                [41.9047551, -87.9396459],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_a8c461ae894d498397b18e1d79d37327 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3478759d4e884adfb26492759a275b89 = $(`<div id="html_3478759d4e884adfb26492759a275b89" style="width: 100.0%; height: 100.0%;">Rosalia’s Deli</div>`)[0];
+            popup_a8c461ae894d498397b18e1d79d37327.setContent(html_3478759d4e884adfb26492759a275b89);
+        
+
+        marker_138feb7f20c34ebba448b32030e9e868.bindPopup(popup_a8c461ae894d498397b18e1d79d37327)
+        ;
+
+        
+    
+    
+            var marker_5bd8fc39efc14f74acf0142800b82691 = L.marker(
+                [41.7913185, -87.5938456],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_7e4d711f4eaa4b6fb6d6e2aa41c0a176 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ab9d2721b8d448080986ad164760c65 = $(`<div id="html_5ab9d2721b8d448080986ad164760c65" style="width: 100.0%; height: 100.0%;">Z&H MarketCafe</div>`)[0];
+            popup_7e4d711f4eaa4b6fb6d6e2aa41c0a176.setContent(html_5ab9d2721b8d448080986ad164760c65);
+        
+
+        marker_5bd8fc39efc14f74acf0142800b82691.bindPopup(popup_7e4d711f4eaa4b6fb6d6e2aa41c0a176)
+        ;
+
+        
+    
+    
+            var marker_376e99e86953427d84aa056159afdbf8 = L.marker(
+                [42.25178409999999, -87.8413535],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_f14d9293e38e4053b5f457021be10e4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_855abfb36e474c82925296cea2e44e20 = $(`<div id="html_855abfb36e474c82925296cea2e44e20" style="width: 100.0%; height: 100.0%;">Market House on the Square</div>`)[0];
+            popup_f14d9293e38e4053b5f457021be10e4a.setContent(html_855abfb36e474c82925296cea2e44e20);
+        
+
+        marker_376e99e86953427d84aa056159afdbf8.bindPopup(popup_f14d9293e38e4053b5f457021be10e4a)
+        ;
+
+        
+    
+    
+            var marker_6f3013e809b94c578680076a38caad5e = L.marker(
+                [41.9152875, -87.6343888],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_177c53c4bd254d23b618809cb13b9b3b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79978610b62c415d9ddb3fb3052219f8 = $(`<div id="html_79978610b62c415d9ddb3fb3052219f8" style="width: 100.0%; height: 100.0%;">Elaine’s Coffee Call</div>`)[0];
+            popup_177c53c4bd254d23b618809cb13b9b3b.setContent(html_79978610b62c415d9ddb3fb3052219f8);
+        
+
+        marker_6f3013e809b94c578680076a38caad5e.bindPopup(popup_177c53c4bd254d23b618809cb13b9b3b)
+        ;
+
+        
+    
+    
+            var marker_5ade2fc0406a4c798eb5cc4c6ecd0fcc = L.marker(
+                [41.8863622, -87.8022297],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_dabb1f9dbf664cfab7ccca774de6ee6c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd0801890e804795b7639ea215fa79be = $(`<div id="html_cd0801890e804795b7639ea215fa79be" style="width: 100.0%; height: 100.0%;">Marion Street Cheese Market</div>`)[0];
+            popup_dabb1f9dbf664cfab7ccca774de6ee6c.setContent(html_cd0801890e804795b7639ea215fa79be);
+        
+
+        marker_5ade2fc0406a4c798eb5cc4c6ecd0fcc.bindPopup(popup_dabb1f9dbf664cfab7ccca774de6ee6c)
+        ;
+
+        
+    
+    
+            var marker_e191c96347c44deca94879f86a76fdb6 = L.marker(
+                [41.8758102, -87.6264489],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_699c1e9699524bed820e95126fffc2d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1638a0be432345aa8dbf7743b4879777 = $(`<div id="html_1638a0be432345aa8dbf7743b4879777" style="width: 100.0%; height: 100.0%;">Cafecito</div>`)[0];
+            popup_699c1e9699524bed820e95126fffc2d7.setContent(html_1638a0be432345aa8dbf7743b4879777);
+        
+
+        marker_e191c96347c44deca94879f86a76fdb6.bindPopup(popup_699c1e9699524bed820e95126fffc2d7)
+        ;
+
+        
+    
+    
+            var marker_34ac2ecf4e0c4dfebc564914ec641225 = L.marker(
+                [41.8961134, -87.677857],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_9f96022063dd4f659092568c45fdf874 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e37edd0493540e2a01302af42cc4d39 = $(`<div id="html_2e37edd0493540e2a01302af42cc4d39" style="width: 100.0%; height: 100.0%;">Chickpea</div>`)[0];
+            popup_9f96022063dd4f659092568c45fdf874.setContent(html_2e37edd0493540e2a01302af42cc4d39);
+        
+
+        marker_34ac2ecf4e0c4dfebc564914ec641225.bindPopup(popup_9f96022063dd4f659092568c45fdf874)
+        ;
+
+        
+    
+    
+            var marker_d96287f8e1bc4e3597d6c2efc7165879 = L.marker(
+                [41.89897850000001, -87.6273926],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_db087db0ca2042319d38c1bb0910fdb0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0066cfdac944806910e6ad60f8c7ff8 = $(`<div id="html_c0066cfdac944806910e6ad60f8c7ff8" style="width: 100.0%; height: 100.0%;">The Goddess and Grocer</div>`)[0];
+            popup_db087db0ca2042319d38c1bb0910fdb0.setContent(html_c0066cfdac944806910e6ad60f8c7ff8);
+        
+
+        marker_d96287f8e1bc4e3597d6c2efc7165879.bindPopup(popup_db087db0ca2042319d38c1bb0910fdb0)
+        ;
+
+        
+    
+    
+            var marker_026f9df408d54c1c8c4f430e9307dfb7 = L.marker(
+                [41.9105832, -87.94048839999999],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_d9abef2f0d3449e4ac6ded2861c33c3b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e21b2a9a81b54dee9055b4c1f9158d67 = $(`<div id="html_e21b2a9a81b54dee9055b4c1f9158d67" style="width: 100.0%; height: 100.0%;">Zenwich</div>`)[0];
+            popup_d9abef2f0d3449e4ac6ded2861c33c3b.setContent(html_e21b2a9a81b54dee9055b4c1f9158d67);
+        
+
+        marker_026f9df408d54c1c8c4f430e9307dfb7.bindPopup(popup_d9abef2f0d3449e4ac6ded2861c33c3b)
+        ;
+
+        
+    
+    
+            var marker_c2399780aa954e0498e59e9737b5ea4b = L.marker(
+                [41.8831061, -87.6254381],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_58eb29a2c8224d67a30ce313037a1826 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac66ae47a24d4d31877a4e66ed267528 = $(`<div id="html_ac66ae47a24d4d31877a4e66ed267528" style="width: 100.0%; height: 100.0%;">Toni Patisserie</div>`)[0];
+            popup_58eb29a2c8224d67a30ce313037a1826.setContent(html_ac66ae47a24d4d31877a4e66ed267528);
+        
+
+        marker_c2399780aa954e0498e59e9737b5ea4b.bindPopup(popup_58eb29a2c8224d67a30ce313037a1826)
+        ;
+
+        
+    
+    
+            var marker_bd52ae68591a4330acb5c40550b3bb91 = L.marker(
+                [41.9431632, -87.6445071],
+                {}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+    
+        var popup_b40887c9957143d5a67a56d81a9563eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff6283b593dc4651859c4b988bb33fbb = $(`<div id="html_ff6283b593dc4651859c4b988bb33fbb" style="width: 100.0%; height: 100.0%;">Phoebe’s Bakery</div>`)[0];
+            popup_b40887c9957143d5a67a56d81a9563eb.setContent(html_ff6283b593dc4651859c4b988bb33fbb);
+        
+
+        marker_bd52ae68591a4330acb5c40550b3bb91.bindPopup(popup_b40887c9957143d5a67a56d81a9563eb)
+        ;
+
+        
+    
+    
+            var layer_control_4ec2dfd82c114a09b4f86fa1ed4074e8 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_5355cc19d1a14d9a81e343d26c85cec6,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_4ec2dfd82c114a09b4f86fa1ed4074e8.base_layers,
+                layer_control_4ec2dfd82c114a09b4f86fa1ed4074e8.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_e82fc01e65b2436ea0e10cab43a7e5a0);
+        
+</script>
